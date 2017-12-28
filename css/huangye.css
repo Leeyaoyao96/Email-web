@@ -1,0 +1,170 @@
+	/*通用样式*/
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: "微软雅黑";
+		font-size:14px;
+	}
+	
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		
+	}
+	.nav,.content,.footer{
+		margin:0 auto;
+		width:1000px;
+	}
+	/*header头部*/
+	.header{
+		height: 90px;
+		background: #5779AF;
+	}
+	.c {
+		width: 1000px;
+		margin: 0 auto;
+		height: 90px;
+		position: relative;
+	}
+	.header img{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top:15px;
+		left: 0;
+	}
+	.header h2{
+		font-size: 14px;
+		color: #C7D1E1;;
+		position: absolute;
+		top:42px;
+		left:232px;
+		overflow: hidden;
+	}
+	/*导航栏*/
+	.nav{
+		line-height: 40px;
+		height:40px;
+		font-size:12px;
+		color: #999;
+	}
+	.nav a{
+		color: deepskyblue;
+	}
+	.nav a:hover{
+		text-decoration: underline;
+	}
+	/*content左部分*/
+	.content{
+		height: 997px;
+		display: block;
+		overflow: hidden;
+	}
+	.left{
+		width: 200px;
+		height: 993px;
+		border:1px solid #ccc;
+		border-top:3px solid #5779AF;
+		background: #F9FBFF;
+		float:left;
+		overflow: hidden;
+	}
+	.areaList li{
+		text-indent: 20px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.areaList .hr{
+		height: 3px;
+		line-height: 3px;
+		background: #5779AF;
+	}
+	.guojiajigou{
+		font-weight: bold;
+		background: #C9D9F9;;
+	}
+	.areaList a{
+		color: black;
+	}
+	.areaList li:hover{
+		background: #C9D9F9;
+		transform:scale(1.2,1.2);
+	}
+	/*content右部分*/
+	.right{
+		float:right;
+		width: 780px;
+		-webkit-animation:fadein 1s;
+	}
+	@-webkit-keyframes fadein{
+		0%{
+			transform:scale(0.6,0.6);
+		}
+		100%{
+			transform: scale(1,1);
+		}
+	}
+	.title{
+		height: 46px;
+		line-height: 46px;
+		font-size:25px;
+		font-weight: normal;
+		border-bottom: 1px solid #ccc;
+	}
+	.information{
+		width: 780px;
+		height: 753px;
+	}
+	.name{
+		padding-left: 10px;
+		display:inline-block;
+		width:310px;
+		height: 46px;
+		line-height: 46px;
+	}
+	.mail{
+		display:inline-block;
+		width:410px;
+		height: 46px;
+		line-height: 46px;
+	}
+	.right ul li{
+		border-bottom: 1px solid #ccc;
+		color: #333;
+		overflow: hidden;
+	}
+	.right a{
+		color: deepskyblue;
+	}
+	.right a:hover{
+		text-decoration: underline;
+	}
+	/*底部*/
+	.footer{
+		height:120px;
+		clear: both;
+		overflow: hidden;
+	}
+	.footer_nav{
+		padding-top:30px;
+		text-align: center;
+		color: #999;
+		font-size: 12px;
+	}
+	.footer_nav a{
+		height: 30px;
+		line-height: 30px;
+		padding-right:21px;
+		font-size: 12px;
+		color: #999;
+	}
+	.footer_nav a:hover{
+		text-decoration: underline;
+	}

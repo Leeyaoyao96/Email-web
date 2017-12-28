@@ -1,0 +1,424 @@
+	/*通用样式*/
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: "微软雅黑";
+	}
+	/*.c {
+		width: 1000px;
+		margin: 0 auto;
+	}*/
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color: #666;
+	}
+	/*a:hover{
+		text-decoration: underline;
+	}*/
+	/*头部*/
+	#header{
+		width:100%;
+		height: 75px;
+		/*box-sizing: border-box;*/
+		border-bottom:1px solid #ccc;
+		position: fixed!important;
+		z-index: 99;
+		background: #fff;
+		top: 0;
+		left: 0;
+		min-width: 1080px;
+	}
+	#header_nav{
+		height: 76px;
+		width: 1080px;
+		margin:0 auto;
+		overflow: hidden;
+		
+	}
+	#header_nav ul li{
+		height: 72px;
+		line-height: 72px;
+		float: left;
+		font-size:16px;
+	}
+	#header_nav ul li img{
+		padding-right:200px;
+		padding-top:15px;
+	}
+	#header_nav ul li a{
+		display: inline-block;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	#header_nav ul li a:hover{
+		color: #0154a0;
+		border-bottom: 4px solid #0154a0;
+	}
+	#login a{
+		/*padding-left:15px;
+		padding-right:15px;	*/
+		color: #999;
+		font-size: 13px;
+	}
+	ul #login a:hover{
+		border-bottom: none!important;
+		color: #999!important;
+	}
+	#free7days{
+		width:100px;
+		height: 22px;
+		border-radius:11px;
+		border:none;
+		outline: none;
+		background: #b61820;
+		color: #fff;
+	}
+	/*轮播图*/
+	#banner{
+		margin-top:76px;
+		width:100%;
+		height:520px;
+		background: url(../img/banner_qiye.jpg)center 0px no-repeat rgb(172, 38, 39);
+	}
+	/*侧栏aside*/
+	#aside{
+		width:62px;
+		position:fixed!important;
+		top:250px;
+		right:10px;
+	}
+	.phone-tep,.ysp-tep,.help-tep,.register-tep,.tip{
+		width:60px;
+		position: relative;
+		margin-bottom: 10px;
+		padding:12px 0px;
+		height: 36px;
+		border: 1px solid #bbb;
+		color: #fff;
+		text-align: center;
+		font-size:16px;
+		line-height: 18px;
+		background: url(../img/aside-contact.png)no-repeat #fff;
+	}
+	.ysp-tep{
+		padding:3px 0px;
+		height: 54px;
+	}
+	.phone-tep{
+		background-position: -154px -2px;
+	}
+	.txt,.tip{
+		/*cursor: default;*/
+		display: none;
+	}
+	.tip{
+		height: 14px;
+		width: 146px;
+		border: none;
+		position:absolute;
+		left:-160px;
+		top:12px;
+		background: url(../img/aside-contact.png)no-repeat;
+		background-position: 0px -10px;
+	}
+	.phone-tep:hover,.ysp-tep:hover,.help-tep:hover{
+		background: #8db2df;
+	}
+	.phone-tep:hover .txt,.ysp-tep:hover .txt,.phone-tep:hover .tip,.help-tep:hover .txt{
+		display: block;
+	}
+	.ysp-tep{
+		background-position: -154px -67px;
+	}
+	.help-tep{
+		background-position: -82px -127px;		
+	}
+	.register-tep{
+		color: #bbb;
+		font-weight:bold;
+		background-position: -10px -127px;
+	}
+	.register-tep:hover{
+		background: #8db2df;
+	}
+	.register-tep:hover a{
+		color: #fff;
+	}
+	/*advantage广告部分*/
+	#main{
+		width: 1080px;
+		height: 320px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		/*display:-ms-flexbox;
+		-ms-flex-direction: row;*/
+	}
+	#main div{
+		padding:70px 21px 70px 21px;
+		text-align: center;
+	}
+	/*#main img{
+		-webkit-transition:transform 1.5s linear;	
+	}
+	#main img:hover{
+		transform: rotatey(360deg);
+	}*/
+	@-webkit-keyframes rotate{
+		0{
+			transform: 0;
+		}
+		20%{
+			transform: rotateY(180deg);
+		}
+		50%{
+			transform: rotateY(270deg);
+		}
+		100%{
+			transform: rotateY(360deg);
+		}
+	}
+	#main img:hover{
+		-webkit-animation:rotate 2s ease-out 1;
+	}
+	.advantage{
+		font-size:18px;
+    	line-height:42px;
+   	 	color: #025bc9;
+	}
+	/*支付pay*/
+	.pay{
+		width:100%;
+		height: 268px;
+		background: #f1f3f4;
+	}
+	.center{
+		margin:0 auto;
+		width:1080px;
+		color: #666;
+	}
+	.pay_top p{
+		height: 70px;
+		text-align: center;
+		font-size:24px;
+		border-bottom: 1px solid #dce6ec;
+		padding-top:50px;
+		overflow: hidden;
+	}
+	.mark1{
+		font-size: 46px;
+	    color: #025bc9;
+	    font-weight: 700;
+	}
+	.pay_bottom{
+		padding-top:30px;
+		width:410px;
+		height:60px;
+		margin:0 auto;
+		background: url(../img/calculator.png) 0px 32px no-repeat;
+		overflow: hidden;
+	}
+	.pay_bottom>span{
+		padding-left:48px;
+		height: 30px;
+		line-height: 30px;
+	}
+	#buy{
+		height: 24px;
+		width:170px;
+		position: relative;
+		top:-3px;
+	}
+	.mark2{
+		color:#025bc9;
+	}
+	/*填写资料模块*/
+	.write{
+		width:750px;
+		margin:0 auto;
+		margin-top:80px;
+		color: #666;
+		margin-bottom: 80px;
+		display: block;
+		overflow: hidden;
+	}
+	caption{
+		font-size:24px;
+		margin-bottom: 20px;
+	}
+	th{
+		font-weight: normal;
+		width:221px;
+		height: 50px;
+		text-align: right;
+	}
+	.write td input{
+		margin-right: 5px;
+		margin-left: 5px;
+		width:360px;
+		height: 28px;
+	}
+	#number1{
+		width:110px;
+		margin-right:5px;
+	}
+	#number2{
+		width:219px;
+	}
+	.write select{
+		width:174px;
+		height: 28px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	#submit{
+		margin-top:10px;
+		width:138px;
+		height: 45px;
+		font-size:21px;
+		border:none;
+		background: #3dbd82;
+		color: #fff;
+		cursor: pointer;
+	}
+	/*填写资料结束*/
+	/*问题及公告*/
+	.body_mod{
+		width:100%;
+		height: 284px;
+		background: #f1f3f4;
+	}
+	.body_mod_c{
+		width: 1080px;
+		height: 190px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		padding: 46px 0px;
+	}
+	.body_mod_c li a{
+		color: gray;
+	}
+	.body_mod_c a:hover{
+		text-decoration: underline;
+	}
+	.body_mod_c p{
+		text-align: right;
+		font-size:12px;
+		height: 28px;
+		line-height: 28px;
+	}
+	.body_mod_c p a{
+		color: #0154a0!important;
+	}
+	.hotquestion,.news,.contactus{
+		width:302px;
+		padding-left: 36px;
+		padding-right:36px;
+		border-right:1px solid #ccc;
+	}
+	.hotquestion{
+		width: 256px;
+		padding-left:0px;
+	}
+	.contactus{
+		width: 378px;
+		padding-right: 0;
+		border-right:0;
+	}
+	.body_mod_c h2{
+		font-size: 24px;
+		color: #666;
+		font-weight: normal;
+		margin-bottom: 5px;
+	}
+	.hotquestion li{
+		width: 256px;
+	}
+	.news li{
+		width:302px;
+	}
+	.hotquestion li,.news li{
+		height: 30px;
+		line-height: 30px;
+		font-size:14px;
+		color: grey;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.contactus img{
+		width:367px;
+		height: 129px;
+		margin-top:5px;
+	}
+	/*问题及公告结束*/
+	#aside_bottom{
+		width: 1080px;
+		margin:0 auto;
+		height: 130px;
+		padding-top:50px;
+		display: flex;
+		flex-direction: row;
+		font-size: 12px;
+		overflow: hidden;
+	}
+	#aside_bottom p{
+		font-size: 14px;
+		font-weight: bold;
+		color: #666;
+		height: 30px;
+		line-height: 30px;
+	}
+	.product{
+		width:316px;
+	}
+	.partner{
+		width:172px;
+	}
+	.help{
+		width:260px;
+	}
+	.about{
+		width:160px;
+	}
+	.link{
+		width:172px;
+	}
+	#aside_bottom span{
+		height: 26px;
+		line-height: 26px;
+		padding-right: 10px;
+	}
+	/*其他aside结束*/
+	/*底部footer*/
+	#footer{
+		height: 100px;
+		padding-top:40px;
+		width:100%;
+		background: #666;
+		color: #fff;
+		text-align: center;
+		font-size:12px;
+		overflow: hidden;
+	}
+	#footer a{
+		color: #fff;
+		font-size: 12px;
+		height: 22px;
+		line-height: 22px;
+	}
+	#footer img{
+		position: relative;
+		top:3px;
+		padding:0 4px;
+	}
+	#footer p{
+		height: 28px;
+		line-height: 28px;
+	}

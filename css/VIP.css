@@ -1,0 +1,470 @@
+	/*通用样式*/
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: "微软雅黑";
+		position:relative;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	input::-webkit-input-placeholder{
+		font-size: 13px;
+		color:#ccc;
+	}
+	/*头部header*/
+	#header{
+		width:100%;
+		height: 46px;
+		/*box-sizing: border-box;*/
+		position: fixed!important;
+		z-index: 99;
+		background: #006d5b;
+		top: 0;
+		left: 0;
+		/*display: flex;
+		flex-direction: row;*/
+	}
+	.VIPlogo{
+		background: url(../img/sprite_VIP.png) no-repeat;
+	}
+	#header .VIPlogo{
+		margin-top:11px;
+		margin-left:10px;
+		height: 24px;
+		width:117px;
+		background-position:0 -31px;
+		float: left;
+	}
+	#header .nav{
+		float:right;
+		height: 46px;
+		overflow: hidden;	
+	}
+	#header .nav ul li{
+		height: 46px;
+		line-height: 46px;
+		float: left;
+		font-size:12px;
+		padding:0 15px;
+	}
+	.nav ul li a{
+		color: #a8c2bc;
+	}
+	.nav a:hover{
+		color: #fff;
+	}
+	.kf{
+		text-indent: 10px;
+		background: url(../img/kf_bg.png)12px 17px no-repeat;
+	}
+	/*广告部分*/
+	#banner{
+		position: relative;
+		z-index:2;
+		margin-top:46px;
+		height: 920px;
+		width:100%;
+		overflow: hidden;
+	}
+	/*@media only screen and (max-height:800px) {
+		#banner{
+			height: 780px;
+		}
+	}*/
+	/*图片背景*/
+	.banner_bgpic{
+		width:100%;
+		height:100%;
+		position: absolute;
+		overflow: hidden;
+		z-index:4;
+	}
+	#bg{
+		width:100%;
+		margin-top:-6%;
+		margin-left:0;
+	}
+	/*阴影背景*/
+	.VIP_bg{
+		position: absolute;
+		height: 100%;
+		width:100%;
+		z-index: 5;
+		background: url(../img/VIP_bannershadow.png) repeat-x 0 100%;
+	}
+	/*VIP登录框*/
+	.login_VIP{
+		position:absolute;
+		left:60%;
+		top:120px;
+		width:320px;
+		height:394px;
+		background: rgba(0,0,0,0.4);
+		z-index: 6;
+	}
+	.login_VIP_c,.login_VIP_change{
+		position: absolute;
+		width:290px;
+		height: 394px;
+		margin-left: 30px;
+		font-size:12px;
+		color: #fff;
+	}
+	/*App登录*/
+	.login_VIP_change{
+		display: none;
+		right:0px;
+		top:0px;
+	}
+	/*邮箱登录*/
+	.login_VIP_c form{
+		width:260px;
+		height: 170px;
+		padding-top:40px;
+		overflow: hidden;
+	}
+	.login_VIP_c a{
+		color: #fff;
+	}
+	.login_VIP_c a:hover{
+		color:#ddd;
+	}
+	.account,#password{
+		width:260px;
+		height: 40px;
+		border: none;
+		outline: none;
+		margin-bottom:25px;
+	}
+	.account{
+		display: flex;
+		flex-direction: row;
+	}
+	#account_left,#password{
+		width:120px;
+		height: 20px;
+		padding:10px;
+		border: none;
+		outline: none;
+	}
+	#account_right{
+		height:20px;
+		width:100px;
+		padding:10px;
+		border: none;
+		outline: none;
+		font-weight: bold;
+		color: #999;
+	}
+	#password{
+		width:240px;
+	}
+	#submit{
+		height: 40px;
+		width: 260px;
+		font-size:16px;
+		border:none;
+		color: #fff;
+		background: #2db39d;
+	}
+	#submit:hover{
+		background: #30bfa7;
+	}
+	.edit{
+		padding-top:15px;
+		width:260px;
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 25px;
+	}
+	#edition{
+		 border: none;
+		 outline: none;
+		 color:#666;
+	}
+	.new{
+		width:260px;
+		height: 65px;
+		border-bottom: 1px solid #ddd;
+	}
+	#newin,#payfor{
+		height: 40px;
+		color:#fff;
+		font-size:15px;
+		background: rgba(0,0,0,0);
+		width:120px;
+		border: 1px solid #ddd;
+		outline: none;
+	}
+	#newin{
+		margin-right:20px;
+	}
+	#newin:hover,#payfor:hover{
+		background: #bbb;
+	}
+	/*登陆框内广告链接*/
+	.link{
+		width:260px;
+		padding-top:8px;
+	}
+	.link li{
+		height: 20px;
+		line-height: 20px;
+	}
+	
+	/*登录框结束*/
+	/*滑动切换*/
+	.change{
+		z-index: 6;
+		/*width:290px;
+		height: 394px;*/
+		width:41px;
+		height:41px;
+		overflow: hidden;
+		position:absolute;
+		right:0px;
+		top:0px;
+	}
+	.change img{
+		position:absolute;
+		right:-41px;
+		-webkit-transition: transform 0.5s linear;
+	}
+	.change:hover img{
+		transform: translate(-41px,-41px);
+	}
+	.change:hover~.login_VIP_c{
+		display: none;
+	}
+	.change:hover>.login_VIP_change{
+		display: block;
+	}
+	/*侧栏aside*/
+	#aside_right{
+		width:96px;
+		height: 245px;
+		position: fixed;
+		right:25px;
+		top:410px;
+		background: rgba(0,109,91,.6);
+		z-index:99;
+		text-align: center;
+		font-size:12px;
+		color:#fff;
+	}
+	.online,.app_weixin{
+		width:96px;
+		height:82px;
+		margin-top:8px;
+		margin-left:7px;
+		background: url(../img/aside_sprite.png)-2px -82px no-repeat;
+	}
+	#aside_right .p1{
+		display:inline-block;
+		width:82px;
+		height: 26px;
+		line-height: 26px;
+		border-bottom: 1px dashed #87cabf;
+	}
+	.app_weixin{
+		height: 72px;
+		margin-left:12px;
+		margin-top:15px;
+		background: url(../img/aside_sprite.png)-4px -4px no-repeat;
+	}
+	.p2{
+		margin-top:6px;
+	}
+	/*主体内容部分*/
+	#content{
+		width:100%;
+		height: 1183px;
+		background: url(../img/VIP_content_bg.jpg)no-repeat;
+		background-size: cover;
+	}
+	.content_c{
+		width:960px;
+		padding-top:164px;
+		margin:0 auto;
+		color: #fff;
+		text-align: center;
+	}
+	.title_h2{
+		padding:50px 0 10px;
+		font-size:40px;
+		font-weight:normal;
+		line-height: 48px;
+	}
+	.content_c>p{
+		font-size:14px;
+		padding:10px 0 70px;
+	}
+	/*VIP特权*/
+	.privelige{
+		height: 300px;
+		padding-bottom:60px;
+		display: flex;
+		flex-direction: row;
+	}
+	.priv{
+		width:260px;
+		margin:0 30px;
+		text-align: center;
+		font-size:14px;
+	}
+	.priv img{
+		width:180px;
+		height: 180px;
+	}
+	.priv img:hover{
+		transform:scale(1.1);
+	}
+	.priv h3{
+		color: #fff;
+		font-size:18px;
+		font-weight:normal;
+		line-height: 36px;
+		margin-top:10px;
+	}
+	.priv p{
+		text-align: left;
+		line-height: 24px;
+	}
+	.priv a{
+		color: #999;
+	}
+	.priv a:hover{
+		color: #fff;
+	}
+	.more{
+		height: 40px;
+		margin-bottom:80px;
+	}
+	
+	.link_more{
+		margin:0 auto;
+		display: inline-block;
+		width:160px;
+		height: 38px;
+		font-size:14px;
+		line-height: 38px;
+		text-align: center;
+		border: 1px solid #b98b2e;
+	}
+	.link_more a{
+		color: #b98b2e;
+	}
+	.link_more:hover{
+		background: #b98b2e;
+	}
+	.link_more:hover a{
+		color: #fff;
+	}
+	.famous{
+		height: 198px;
+		text-align: center;
+	}
+	.famous img{
+		width: 985px;
+		height: 198px;
+	}
+	.join{
+		text-align: center;
+		padding-top:50px;
+		font-size: 16px;
+		color:#999;
+	}
+	/*注册*/
+	.register{
+		height: 211px;
+		background: #111;
+	}
+	.register_c{
+		width: 960px;
+		margin:0 auto;
+		text-align: center;
+	}
+	.register_c h2{
+		font-size:24px;
+		padding:28px 0 20px;
+		font-weight: normal;
+		line-height: 48px;
+		color: #fff;
+	}
+	.register_c input{
+		margin:0 15px;
+		width:150px;
+		height: 50px;
+		font-size: 16px;
+		color: #fff;
+		background: #ba8b2e;
+		border: none;
+		outline: none;
+	}
+	#regist_con:hover{
+		background: #e8bc66;
+	}
+	#group:hover{
+		background: #ccc;
+	}
+	#group{
+		background: #999;
+	}
+	.register_c p{
+		line-height: 64px;
+		color: #b5882d;
+		font-size: 14px;
+	}
+	.register_c p a{
+		color: #B5882D;
+		font-family: "Georgia";
+		font-size: 20px;
+		cursor: default;
+	}
+	/*底部footer*/
+	#footer{
+		height: 175px;
+		font-size:12px;
+		color: #666;
+		padding-top:20px;
+	}
+	.footer_c{
+		width:960px;
+		margin:0 auto;
+	}
+	.footer_top{
+		height: 93px;
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+	}
+	.footer_top .else{
+		width:239px;
+		border-right: 1px solid #ccc;
+	}
+	.foter_top .else:last-child{
+		border-right: none;
+	}
+	.footer_top h3{
+		padding:15px 0 5px;
+		font-size:16px;
+		color: #333;
+		font-weight: normal;
+	}
+	.footer_bottom{
+		margin-top:27px;
+		height: 55px;
+		text-align: center;
+	}
+	.footer_bottom a{
+		color: #666;
+		padding:0 5px;
+		height: 24px;
+		line-height: 24px;
+	}

@@ -1,0 +1,232 @@
+	/*通用样式*/
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: "宋体","微软雅黑";
+		font-size:14px;
+	}
+	
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color:#005590;
+	}
+	#header a:hover,.hotsearch a:hover,.quick_answer a:hover,#footer a:hover{
+		text-decoration: underline;
+	}
+	#content{
+		margin:0 auto;
+		width:960px;
+	}
+	#header,#search,#footer{
+		margin:0 auto;
+		width:1024px;
+	}
+	/*头部*/
+	#header{
+		height: 52px;
+		padding-top:26px;
+		font-size:12px;
+	}
+	#header img{
+		margin:0px 10px 0px 12px;
+	}
+	#header span{
+		display: inline-block;
+		height: 24px;
+		line-height: 24px;
+		border-left:2px solid #ccc;
+		font-size:24px;
+		padding-top: 0px;
+		padding-left:15px;
+		padding-right:15px;
+		margin-left: 24px;
+		position:relative;
+		top:-4px;
+		color: #4e4e4e;
+	}
+	/*搜索栏*/
+	.search_bg{
+		height: 40px;
+		background: #3b79b5;
+		font-size:15px;
+		vertical-align: center;
+	}
+	.search_bg ul{
+		display: block;
+		overflow: hidden;
+		height: 40px;
+	}
+	.search_bg li{
+		display: inline-block;
+		height: 40px;
+		width:134px;
+		text-align: center;
+		float: left;
+	}
+	.search_bg a{
+		display: inline-block;
+		margin-top:10px;
+		width: 134px;
+		height: 20px;
+		border-right: 1px solid #2d65a3;
+		color: #fff;
+	}
+	.search_bg ul li:hover{
+		background: #184d80;
+	}
+	.search_bg2{
+		height: 106px;
+		background: #ebf2f6;
+		position: relative;
+		display: block;
+		overflow: hidden;
+	}
+	.search_bg2 .sanjiao{
+		position: absolute;
+		top:0px;
+		left:64px;
+	}
+	.sousuo{
+		margin-top:20px;
+		margin-left: 30px;
+	}
+	/*搜索框*/
+	.search_bg2 input{
+		height:36px ;
+		width:550px;
+		border:1px solid #ccc;
+		position:relative;
+		top:-20px;
+		margin-left: 10px;
+		outline: none;
+	}
+	.quickhelp{
+		margin-left:10px;
+		position: relative;
+		top:-5px;
+	}
+	.hotsearch{
+		display: block;
+		overflow: hidden;
+		margin-left:90px;
+		margin-top:-12px;
+		font-size:14px;
+		color: #666;
+	}
+	.hotsearch a{
+		padding-left: 6px;
+	}
+	/*content内容*/
+	#content{
+		width: 960px;
+		height: 488px;
+		display: block;
+		overflow: hidden;
+	}
+	.notice{
+		height: 24px;
+		width: 958px;
+		border: 1px solid #c6c6a8;
+    	background-color: #ffffe1;
+    	margin-top:20px;
+    	line-height: 24px;
+    	margin-bottom: 18px;
+	}
+	.notice a{
+		font-size: 12px;
+	}
+	.notice a:hover{
+		text-decoration: underline;
+	}
+	.question{
+		width: 770px;
+		height: 286px;
+		float: left;
+		border: 1px solid #ccc;
+		position:relative;
+		margin-bottom:20px;
+	}
+	
+	#clickin1,#clickin2,#clickin3,#clickin4{
+		width:100px;
+		height:32px;
+		background: #e5eef4;
+		color: #4e4e4e;
+		border: 1px solid #ccc;
+		outline: none;
+		position: absolute;
+		font-weight: bold;
+		left: 44px;
+		top:240px;
+	}
+	#clickin2{
+		left:236px;
+	}
+	#clickin3{
+		left:428px;
+	}
+	#clickin4{
+		left:620px;
+	}
+	.quick_answer{
+		float: right;
+		width:176px;
+		height: 286px;
+		border: 1px solid #ccc;
+		
+	}
+	.quick_answer ul{
+		display: block;
+		overflow: hidden;
+	}
+	.quick_answer h2{
+		height: 52px;
+		font-size: 20px;
+		color: #4e4e4e;
+		font-weight: normal;
+		background: #F4F4F4;
+		line-height: 52px;
+		text-align: center;
+	}
+	.quick_answer li{
+		margin-left: 16px;
+		line-height: 36px;
+		border-bottom: 1px dashed #ccc;
+	}
+	.quick_answer ul img{
+		padding-right: 10px;
+		position: relative;
+		top:3px;
+	}
+	#contact_us{
+		position:relative;
+		height: 0px;
+	}
+	#contact_us .close{
+		position: absolute;
+		left:948px;
+	}
+	/*底部*/
+	#footer{
+		height: 76px;
+		background: #f5f5f5;
+		display: block;
+		overflow: hidden;
+	}
+	#footer nav{
+		padding-top:16px;
+		text-align: center;
+		font-size:12px;
+	}
+	#footer nav a,#footer nav p{
+		padding-right: 12px;
+		color: black;
+		height: 22px;
+		line-height: 22px;
+	}

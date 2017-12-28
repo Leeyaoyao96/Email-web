@@ -1,0 +1,188 @@
+/*通用样式*/
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: "微软雅黑";
+		font-size:12px;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	.header,.content,.footer{
+		margin:0 auto;
+		width:970px;
+	}
+	/*头部header*/
+	.header{
+		height: 84px;
+		display: block;
+		overflow: hidden;
+	}
+	.nav_left{
+		float: left;
+		height: 56px;
+		padding-top:28px;
+	}
+	.nav_left h1{
+		height:44px;
+		float: left;
+		padding-right: 10px;
+	}
+	.nav_left h2{
+		float: left;
+		height: 28px;
+		position:relative;
+		top:8px;
+		line-height: 28px;
+	}
+	.nav h2 img{
+		vertical:bottom;
+	}
+	.nav_right{
+		float: right;
+	}
+	.nav_right ul{
+		height: 64px;
+	}
+	.nav_right ul li{
+		padding-top:20px;
+		line-height: 64px;
+		float: left;
+		padding-right:14px;
+		
+	}
+	.nav_right a{
+		color: #999;
+	}
+	.nav_right a:hover{
+		text-decoration: underline;
+	}
+	/*content*/
+	.content{
+		width:959px;
+		height:486px;
+		margin:0 auto;
+		background: url(../img/guowai_bg.jpg);
+		position:relative;
+	}
+	.content_163,.content_126,.content_yeah{
+		width:205px;
+		height: 102px;
+		position: absolute;
+		left:255px;
+		
+	}
+	.content_163{
+		top:66px;
+		background: url(../img/163_1.png) no-repeat;
+	}
+	.content_126{
+		top:168px;
+		background: url(../img/126.png) no-repeat;
+		left:256px;
+	}
+	.content_yeah{
+		width: 204px;
+		top:268px;
+		background: url(../img/yeah_1.png) no-repeat;
+	}
+	.content_163:hover{
+		background: url(../img/163_2.png);
+	}
+	.content_yeah:hover{
+		background: url(../img/yeach_2.png);
+		height: 101px;
+	}
+	/*登录表单*/
+	form{
+		width: 380px;
+		height:290px;
+		position: absolute;
+		top:70px;
+		left:492px;
+		display: block;
+		overflow: hidden;
+	}
+	form a{
+		text-decoration: underline;
+		color:#007B43;
+	}
+	/*账号、密码*/
+	#zhanghao,#mm{
+		height: 26px;
+   		background: #F1FFF7;
+    	border: 1px solid #878787;
+    	margin: 8px 5px;
+	}
+	input:focus{
+		background: #FFFFD8!important;
+	}
+	#mail{
+		font-weight: bold;
+	}
+	#mail,#banben{
+		margin: 8px 5px;
+	}
+	/*版本*/
+	#banben{
+		width:170px;
+		font-size:12px;
+	}
+	#remember{
+		height: 15px;
+    	width: 15px;
+    	line-height: 14px;
+    	margin:8px 0px 14px 42px;
+    	position: relative;
+    	top: 4px;
+	}
+	/*登录提交*/
+	#submit{
+		width:86px;
+		height: 34px;
+		color: #fff;
+		background: url(../img/denglu_bg1.png);
+		border:none;
+		outline: none;
+		margin:0px 15px 8px 42px;
+	}
+	#submit:hover{
+		background: url(../img/denglu_bg2.png);
+	}
+	#submit:active{
+		background: url(../img/denglu_bg1.png)!important;
+	}
+	.free{
+		color: red;
+		text-decoration:none;
+	}
+	.free:hover{
+		text-decoration: underline;
+	}
+	/*底部footer*/
+	/*底部*/
+	footer{
+		height: 100px;
+	}
+	footer nav{
+		width:580px;
+		margin: 0 auto;
+		font-size: 12px;
+		height: 40px;
+		line-height: 40px;
+		display: block;
+		overflow: hidden;
+	}
+	footer nav a{
+		margin-left:12px;
+		color:#888 ;
+	}
+	footer a:hover{
+		text-decoration: underline;
+	}
